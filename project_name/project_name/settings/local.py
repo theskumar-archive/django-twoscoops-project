@@ -66,3 +66,15 @@ DEBUG_TOOLBAR_CONFIG = {
     'SHOW_TEMPLATE_CONTEXT': True,
 }
 ########## END TOOLBAR CONFIGURATION
+
+
+########## LOG SQL QUERIES TO CONSOLE
+LOGGING['handlers']['console'] = {
+    'level': 'DEBUG',
+    'class': 'logging.StreamHandler',
+}
+
+LOGGING['loggers']['django.db.backends'] = {
+    'level': 'DEBUG',
+    'handlers': ['console'],
+}
