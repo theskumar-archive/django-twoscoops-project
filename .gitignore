@@ -7,6 +7,11 @@
 # Editor temp files:
 *.swp
 *~
+*.sublime-workspace
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
 
 # Sphinx docs:
 build
@@ -16,3 +21,12 @@ build
 
 # Logs:
 *.log
+
+# OS Files
+.DS_Store
+._*
+.Trashes
+.Spotlight-V100
+.AppleDouble
+.LSOverride
+Icon
